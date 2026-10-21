@@ -47,7 +47,7 @@ details[open] .chev{transform:rotate(180deg)}
 .field{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:.85rem;padding:.85rem 1rem;color:#fff;outline:none;transition:border-color .2s,box-shadow .2s}
 .field:focus{border-color:#FFC107;box-shadow:0 0 0 3px rgba(255,193,7,.2)}
 .field option{color:#222}
-.i18n-sel{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:9999px;color:#fff;font-weight:700;font-size:.8rem;padding:.5rem .45rem;outline:none;cursor:pointer;transition:border-color .2s}
+.i18n-sel{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:9999px;color:#fff;font-weight:700;font-size:.78rem;letter-spacing:.02em;padding:.5rem 1.7rem .5rem .9rem;outline:none;cursor:pointer;transition:border-color .2s;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23ffffff' stroke-opacity='.65' fill='none' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .7rem center}
 .i18n-sel:hover{border-color:#FFC107}
 .i18n-sel:focus-visible{outline:2px solid #FFC107;outline-offset:3px}
 .i18n-sel option{color:#222}
@@ -65,7 +65,7 @@ details[open] .chev{transform:rotate(180deg)}
 <!-- HEADER -->
 <header id="hdr" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
   <div class="max-w-7xl mx-auto px-5 h-20 flex items-center justify-between">
-    <a href="#top" class="flex flex-col leading-none" aria-label="LEADER Weihnachtsvideos">
+    <a href="#top" class="flex flex-col leading-none shrink-0" aria-label="LEADER Weihnachtsvideos">
       <span class="font-display font-black text-[28px] tracking-tight text-white">LEADER</span>
       <span class="flex items-center gap-1.5 mt-1.5">
         <i class="w-2.5 h-2.5 rounded-full bg-plum ring-1 ring-white/50"></i><i class="w-2.5 h-2.5 rounded-full bg-pine"></i><i class="w-2.5 h-2.5 rounded-full bg-holly"></i>
@@ -79,18 +79,18 @@ details[open] .chev{transform:rotate(180deg)}
       <a data-i18n="nav.plan" class="hover:text-gold transition" href="#planos">Planos</a>
       <a data-i18n="nav.faq" class="hover:text-gold transition" href="#faq">FAQ</a>
     </nav>
-    <div class="flex items-center gap-3">
+    <div class="flex items-center gap-2 sm:gap-3">
       <label class="sr-only" data-i18n="a_lsel" for="i18nSel">Idioma do site</label>
-      <select id="i18nSel" class="i18n-sel" aria-label="Idioma do site">
-        <option value="pt">PT Português</option>
-        <option value="en">EN English</option>
-        <option value="de">DE Deutsch</option>
-        <option value="fr">FR Français</option>
-        <option value="es">ES Español</option>
-        <option value="it">IT Italiano</option>
-        <option value="pl">PL Polski</option>
+      <select id="i18nSel" class="i18n-sel shrink-0" data-i18n-title="a_lsel" title="Idioma do site" aria-label="Idioma do site">
+        <option value="pt">PT</option>
+        <option value="en">EN</option>
+        <option value="de">DE</option>
+        <option value="fr">FR</option>
+        <option value="es">ES</option>
+        <option value="it">IT</option>
+        <option value="pl">PL</option>
       </select>
-      <a href="#pedido" data-i18n="cta.quote" class="btn-gold hidden sm:inline-flex rounded-full px-5 py-2.5 text-sm">Solicitar orçamento</a>
+      <a href="#pedido" data-i18n="cta.quote" class="btn-gold hidden sm:inline-flex rounded-full px-5 py-2.5 text-sm shrink-0 whitespace-nowrap">Solicitar orçamento</a>
       <button id="burger" data-i18n-aria="a_menu" class="lg:hidden w-11 h-11 rounded-full glass grid place-items-center" aria-label="Abrir menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
     </div>
   </div>
