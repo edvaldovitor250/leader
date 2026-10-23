@@ -70,7 +70,7 @@ details[open] .chev{transform:rotate(180deg)}
       <span class="font-display font-black text-[28px] tracking-tight text-white">LEADER</span>
       <span class="flex items-center gap-1.5 mt-1.5">
         <i class="w-2.5 h-2.5 rounded-full bg-plum ring-1 ring-white/50"></i><i class="w-2.5 h-2.5 rounded-full bg-pine"></i><i class="w-2.5 h-2.5 rounded-full bg-holly"></i>
-        <span class="ml-1 text-[11px] font-semibold text-white/85">Weihnachtsvideos</span>
+        <span class="ml-1 text-[11px] font-semibold text-white/85" data-i18n="brand.sub">Weihnachtsvideos</span>
       </span>
     </a>
     <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-white/80" aria-label="Principal">
@@ -421,7 +421,7 @@ details[open] .chev{transform:rotate(180deg)}
 </main>
 
 <footer class="relative z-10 border-t border-white/10 py-10 text-center text-sm text-white/50 px-5">
-  <p class="font-display font-black text-xl text-white">LEADER <span class="text-sm font-semibold text-white/70">Weihnachtsvideos</span></p>
+  <p class="font-display font-black text-xl text-white">LEADER <span class="text-sm font-semibold text-white/70" data-i18n="brand.sub">Weihnachtsvideos</span></p>
   <p class="mt-2" data-i18n="ft.p">Vídeos 3D de Natal e Fim de Ano para empresas na Suíça, na Alemanha e em toda a Europa. Personalização em alemão, francês e italiano. © 2026 LEADER. Todos os direitos reservados.</p>
 </footer>
 
@@ -431,6 +431,7 @@ details[open] .chev{transform:rotate(180deg)}
 const WA_NUMBER='41000000000'; // TODO: troque pelo número real, só dígitos com DDI
 const T={
 pt:{
+"brand.sub":"Vídeos de Natal",
 "ex.galT":"Galeria completa","ex.galP":"Todos os vídeos da coleção, no formato original, prontos para assistir e compartilhar.",
 metaTitle:"LEADER Weihnachtsvideos – Vídeos 3D de Natal e Fim de Ano para empresas",
 metaDesc:"Vídeos 3D corporativos de Natal e Fim de Ano personalizados com o seu logo e contatos: Papai Noel, chalé nevado e Aurora Boreal em alemão, francês e italiano. Para empresas na Suíça, na Alemanha e em toda a Europa. Solicite o orçamento.",
@@ -506,6 +507,7 @@ waM3:"Logo: {file} (enviarei por aqui).",
 "d_it":"Para o Ticino, o Grigioni italiano e os clientes italófonos da Suíça e da Europa."
 },
 en:{
+"brand.sub":"Christmas Videos",
 "ex.galT":"Full gallery","ex.galP":"Every video in the collection, in the original format, ready to watch and share.",
 metaTitle:"LEADER Weihnachtsvideos – 3D Christmas and New Year videos for companies",
 metaDesc:"Corporate 3D Christmas and New Year videos personalized with your logo and contacts: Santa Claus, snowy chalet and Northern Lights in German, French and Italian. For companies in Switzerland, Germany and across Europe. Request your quote.",
@@ -581,6 +583,7 @@ waM3:"Logo: {file} (I'll send it here).",
 "d_it":"For Ticino, Grigioni italiano and Italian-speaking customers in Switzerland and Europe."
 },
 de:{
+"brand.sub":"Weihnachtsvideos",
 "ex.galT":"Komplette Galerie","ex.galP":"Alle Videos der Kollektion im Originalformat, bereit zum Ansehen und Teilen.",
 metaTitle:"LEADER Weihnachtsvideos – 3D-Weihnachts- und Silvestervideos für Unternehmen",
 metaDesc:"Corporate 3D-Weihnachts- und Silvestervideos mit Ihrem Logo und Ihren Kontakten: Weihnachtsmann, verschneites Chalet und Nordlichter auf Deutsch, Französisch und Italienisch. Für Unternehmen in der Schweiz, in Deutschland und ganz Europa. Jetzt Angebot anfordern.",
@@ -656,6 +659,7 @@ waM3:"Logo: {file} (sende ich hier).",
 "d_it":"Für das Tessin, Graubünden und die italienischsprachigen Kunden in der Schweiz und in Europa."
 },
 fr:{
+"brand.sub":"Vidéos de Noël",
 "ex.galT":"Galerie complète","ex.galP":"Toutes les vidéos de la collection, dans le format d’origine, prêtes à être regardées et partagées.",
 metaTitle:"LEADER Weihnachtsvideos – Vidéos 3D de Noël et de Nouvel An pour entreprises",
 metaDesc:"Vidéos 3D corporatives de Noël et de Nouvel An personnalisées avec votre logo et vos contacts : Père Noël, chalet enneigé et aurores boréales en allemand, français et italien. Pour les entreprises en Suisse, en Allemagne et dans toute l'Europe. Demandez votre devis.",
@@ -732,6 +736,7 @@ waM3:"Logo : {file} (je l'enverrai ici).",
 },
 
 es:{
+"brand.sub":"Vídeos de Navidad",
 "ex.galT":"Galería completa","ex.galP":"Todos los vídeos de la colección, en el formato original, listos para ver y compartir.",
 metaTitle:"LEADER Weihnachtsvideos – Vídeos 3D de Navidad y Año Nuevo para empresas",
 metaDesc:"Vídeos 3D corporativos de Navidad y Año Nuevo personalizados con su logo y sus contactos: Papa Noel, chalé nevado y aurora boreal en alemán, francés e italiano. Para empresas en Suiza, Alemania y toda Europa. Solicite su presupuesto.",
@@ -807,6 +812,7 @@ waM3:"Logo: {file} (se lo enviaré por aquí).",
 "d_it":"Para el Tesino, los Grisones y los clientes italófonos de Suiza y de Europa."
 },
 it:{
+"brand.sub":"Video di Natale",
 "ex.galT":"Galleria completa","ex.galP":"Tutti i video della collezione, nel formato originale, pronti da guardare e condividere.",
 metaTitle:"LEADER Weihnachtsvideos – Video 3D di Natale e Capodanno per aziende",
 metaDesc:"Video 3D aziendali di Natale e Capodanno personalizzati con il vostro logo e i vostri contatti: Babbo Natale, chalet innevato e aurora boreale in tedesco, francese e italiano. Per aziende in Svizzera, Germania e in tutta Europa. Richiedete un preventivo.",
@@ -882,6 +888,7 @@ waM3:"Logo: {file} (lo invieremo qui).",
 "d_it":"Per il Ticino, i Grigioni e i clienti italofoni della Svizzera e d'Europa."
 },
 pl:{
+"brand.sub":"Filmy świąteczne",
 "ex.galT":"Kompletna galeria","ex.galP":"Wszystkie filmy z kolekcji, w oryginalnym formacie, gotowe do obejrzenia i udostępnienia.",
 metaTitle:"LEADER Weihnachtsvideos – Filmy 3D na Boże Narodzenie i Nowy Rok dla firm",
 metaDesc:"Firmowe filmy 3D na Boże Narodzenie i Nowy Rok, spersonalizowane Twoim logo i kontaktami: Mikołaj, zaśnieżony chalet i zorza polarna po niemiecku, francusku i włosku. Dla firm w Szwajcarii, Niemczech i całej Europie. Poproś o wycenę.",
@@ -1036,6 +1043,7 @@ if(['de','fr','it'].includes(LNG))pick(LNG,false);
 window.onLangChange=function(){
  document.querySelectorAll('#tabs .tab').forEach(b=>{b.textContent=T[LNG]["t_"+b.dataset.k]});
  $('#greet').textContent=L[cur].greet;$('#gdesc').textContent=T[LNG]["d_"+cur];
+ document.getElementById('wa').href=wa(T[LNG].waFloat);
  if(L[LNG]&&cur!==LNG)pick(LNG,false);
 };
 document.querySelectorAll('[data-autoplay]').forEach(a=>a.addEventListener('click',()=>{vid.muted=false;muteB.innerHTML='<i class="fa-solid fa-volume-high"></i>';setTimeout(()=>vid.play().catch(()=>{}),500)}));
