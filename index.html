@@ -203,49 +203,55 @@ details[open] .chev{transform:rotate(180deg)}
     <div class="mt-16 pt-4" id="galeria">
       <h3 class="font-display font-black text-3xl sm:text-4xl tracking-tight" data-i18n="ex.galT">Galeria completa</h3>
       <p class="mt-3 text-white/60 text-base" data-i18n="ex.galP">Todos os vídeos da coleção, no formato original, prontos para assistir e compartilhar.</p>
-      <div class="mt-8 columns-1 sm:columns-2 lg:columns-3 gap-5">
-        <figure class="mb-5 break-inside-avoid">
-          <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-black shadow-xl shadow-black/40 transition hover:border-gold/50">
-            <video class="block w-full h-auto" src="videos/A.mp4" preload="metadata" playsinline controls></video>
-            <span class="absolute left-3 top-3 rounded-full bg-plum/80 px-2.5 py-1 text-[11px] font-bold text-gold backdrop-blur">A</span>
-          </div>
-        </figure>
-        <figure class="mb-5 break-inside-avoid">
-          <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-black shadow-xl shadow-black/40 transition hover:border-gold/50">
-            <video class="block w-full h-auto" src="videos/D.mp4" preload="metadata" playsinline controls></video>
-            <span class="absolute left-3 top-3 rounded-full bg-plum/80 px-2.5 py-1 text-[11px] font-bold text-gold backdrop-blur">D</span>
-          </div>
-        </figure>
-        <figure class="mb-5 break-inside-avoid">
-          <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-black shadow-xl shadow-black/40 transition hover:border-gold/50">
-            <video class="block w-full h-auto" src="videos/C.mp4" preload="metadata" playsinline controls></video>
-            <span class="absolute left-3 top-3 rounded-full bg-plum/80 px-2.5 py-1 text-[11px] font-bold text-gold backdrop-blur">C</span>
-          </div>
-        </figure>
-        <figure class="mb-5 break-inside-avoid">
-          <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-black shadow-xl shadow-black/40 transition hover:border-gold/50">
-            <video class="block w-full h-auto" src="videos/B.mp4" preload="metadata" playsinline controls></video>
-            <span class="absolute left-3 top-3 rounded-full bg-plum/80 px-2.5 py-1 text-[11px] font-bold text-gold backdrop-blur">B</span>
-          </div>
-        </figure>
-        <figure class="mb-5 break-inside-avoid">
-          <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-black shadow-xl shadow-black/40 transition hover:border-gold/50">
-            <video class="block w-full h-auto" src="videos/F.mp4" preload="metadata" playsinline controls></video>
-            <span class="absolute left-3 top-3 rounded-full bg-plum/80 px-2.5 py-1 text-[11px] font-bold text-gold backdrop-blur">F</span>
-          </div>
-        </figure>
-        <figure class="mb-5 break-inside-avoid">
-          <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-black shadow-xl shadow-black/40 transition hover:border-gold/50">
-            <video class="block w-full h-auto" src="videos/E.mp4" preload="metadata" playsinline controls></video>
-            <span class="absolute left-3 top-3 rounded-full bg-plum/80 px-2.5 py-1 text-[11px] font-bold text-gold backdrop-blur">E</span>
-          </div>
-        </figure>
-        <figure class="mb-5 break-inside-avoid">
-          <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-black shadow-xl shadow-black/40 transition hover:border-gold/50">
-            <video class="block w-full h-auto" src="videos/G.mp4" preload="metadata" playsinline controls></video>
-            <span class="absolute left-3 top-3 rounded-full bg-plum/80 px-2.5 py-1 text-[11px] font-bold text-gold backdrop-blur">G</span>
-          </div>
-        </figure>
+      <div class="mt-8 space-y-5">
+        <div class="grid gap-5 sm:grid-cols-2">
+          <figure>
+            <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-black shadow-xl shadow-black/40 transition hover:border-gold/50">
+              <video class="block w-full h-auto" src="videos/A.mp4" poster="videos/poster-A.jpg" preload="none" playsinline controls></video>
+              <span class="absolute left-3 top-3 rounded-full bg-plum/80 px-2.5 py-1 text-[11px] font-bold text-gold backdrop-blur">A</span>
+            </div>
+          </figure>
+          <figure>
+            <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-black shadow-xl shadow-black/40 transition hover:border-gold/50">
+              <video class="block w-full h-auto" src="videos/D.mp4" poster="videos/poster-D.jpg" preload="none" playsinline controls></video>
+              <span class="absolute left-3 top-3 rounded-full bg-plum/80 px-2.5 py-1 text-[11px] font-bold text-gold backdrop-blur">D</span>
+            </div>
+          </figure>
+        </div>
+        <div class="grid gap-5 sm:grid-cols-2">
+          <figure>
+            <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-black shadow-xl shadow-black/40 transition hover:border-gold/50">
+              <video class="block w-full h-auto" src="videos/C.mp4" poster="videos/poster-C.jpg" preload="none" playsinline controls></video>
+              <span class="absolute left-3 top-3 rounded-full bg-plum/80 px-2.5 py-1 text-[11px] font-bold text-gold backdrop-blur">C</span>
+            </div>
+          </figure>
+          <figure>
+            <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-black shadow-xl shadow-black/40 transition hover:border-gold/50">
+              <video class="block w-full h-auto" src="videos/B.mp4" poster="videos/poster-B.jpg" preload="none" playsinline controls></video>
+              <span class="absolute left-3 top-3 rounded-full bg-plum/80 px-2.5 py-1 text-[11px] font-bold text-gold backdrop-blur">B</span>
+            </div>
+          </figure>
+        </div>
+        <div class="grid gap-5 sm:grid-cols-3">
+          <figure>
+            <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-black shadow-xl shadow-black/40 transition hover:border-gold/50">
+              <video class="block w-full h-auto" src="videos/F.mp4" poster="videos/poster-F.jpg" preload="none" playsinline controls></video>
+              <span class="absolute left-3 top-3 rounded-full bg-plum/80 px-2.5 py-1 text-[11px] font-bold text-gold backdrop-blur">F</span>
+            </div>
+          </figure>
+          <figure>
+            <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-black shadow-xl shadow-black/40 transition hover:border-gold/50">
+              <video class="block w-full h-auto" src="videos/E.mp4" poster="videos/poster-E.jpg" preload="none" playsinline controls></video>
+              <span class="absolute left-3 top-3 rounded-full bg-plum/80 px-2.5 py-1 text-[11px] font-bold text-gold backdrop-blur">E</span>
+            </div>
+          </figure>
+          <figure>
+            <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-black shadow-xl shadow-black/40 transition hover:border-gold/50">
+              <video class="block w-full h-auto" src="videos/G.mp4" poster="videos/poster-G.jpg" preload="none" playsinline controls></video>
+              <span class="absolute left-3 top-3 rounded-full bg-plum/80 px-2.5 py-1 text-[11px] font-bold text-gold backdrop-blur">G</span>
+            </div>
+          </figure>
+        </div>
       </div>
     </div>
   </div>
