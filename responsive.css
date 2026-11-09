@@ -12,7 +12,9 @@ body { overflow-wrap: anywhere; }
 img, video { max-width: 100%; }
 main > section { scroll-margin-top: 6.5rem; }
 main > section:not(:first-child) { padding-block: clamp(3.5rem, 7vw, 6rem); }
-main > section:first-child { min-height: 0; padding-top: 7rem; }
+main > section:first-child { min-height: 0; padding-top: 7rem; padding-bottom: 1.5rem; }
+main > #exemplos { padding-top: 1.5rem; }
+#galeria > .space-y-5 { margin-top: 1.25rem; }
 main h1 { font-size: clamp(2rem, 5.1vw, 4.5rem); }
 main h2 { font-size: clamp(1.75rem, 4vw, 3rem); line-height: 1.15; }
 #greet { font-size: clamp(2rem, 4.5vw, 3.75rem); }
@@ -102,7 +104,8 @@ footer { padding-bottom: calc(8rem + env(safe-area-inset-bottom)); }
   #hdr [data-i18n="brand.sub"] { font-size: 10px; line-height: 1.25; }
   #hdr .i18n-sel { width: 110px; min-height: 44px; padding-left: .625rem; }
   #mnav { position: absolute; left: 0; right: 0; top: 100%; margin-top: .25rem; max-height: calc(100dvh - 90px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)); }
-  main > section:first-child { min-height: 0; padding-top: 1.5rem; padding-bottom: 3rem; }
+  main > section:first-child { min-height: 0; padding-top: 1.5rem; padding-bottom: 1rem; }
+  main > #exemplos { padding-top: 1rem; }
   main > section:first-child h1 { margin-top: 0; font-size: clamp(1.75rem, 7.7vw, 2.5rem); line-height: 1.12; text-wrap: initial; }
   main > section:first-child [data-i18n="hero.p"] { margin-top: 1rem; font-size: 1rem; line-height: 1.65; }
   main > section:first-child .hero-in.flex { margin-top: 1.5rem; gap: .75rem; }
