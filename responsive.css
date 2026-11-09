@@ -12,7 +12,7 @@ body { overflow-wrap: anywhere; }
 img, video { max-width: 100%; }
 main > section { scroll-margin-top: 6.5rem; }
 main > section:not(:first-child) { padding-block: clamp(3.5rem, 7vw, 6rem); }
-main > section:first-child { min-height: 100svh; padding-top: 7rem; }
+main > section:first-child { min-height: 0; padding-top: 7rem; }
 main h1 { font-size: clamp(2rem, 5.1vw, 4.5rem); }
 main h2 { font-size: clamp(1.75rem, 4vw, 3rem); line-height: 1.15; }
 #greet { font-size: clamp(2rem, 4.5vw, 3.75rem); }
@@ -25,8 +25,6 @@ h1, h2, h3 { text-wrap: balance; }
 .i18n-sel { min-height: 44px; font-size: 1rem; }
 #mnav { max-height: calc(100vh - 6rem); max-height: calc(100dvh - 6rem - env(safe-area-inset-bottom)); overflow-y: auto; overscroll-behavior: contain; background: rgba(12,5,20,.97); }
 #mnav a { min-height: 44px; display: flex; align-items: center; justify-content: center; }
-.hero-preview { width: min(100%, 290px); }
-.hero-preview > a { width: 100%; }
 .showcase-player { width: 100%; max-width: 360px; }
 .showcase-player .video-frame { width: min(100%, 310px); }
 #tabs { gap: .5rem; }
@@ -77,13 +75,8 @@ footer { padding-bottom: calc(8rem + env(safe-area-inset-bottom)); }
 }
 @media (max-width: 639px) {
   main > section > div:not(.aurora) { padding-inline: max(1rem, env(safe-area-inset-left)) max(1rem, env(safe-area-inset-right)); }
-  main > section:first-child > .grid { gap: 3rem; }
   main > section:first-child .hero-in.inline-flex { border-radius: 1rem; }
   main > section:first-child .hero-in.flex > a { width: 100%; padding: 1rem; }
-  main > section:first-child dl { gap: .75rem; }
-  main > section:first-child dd { font-size: clamp(1.25rem, 6vw, 2rem); }
-  .hero-preview { width: min(calc(100% - 2rem), 250px); }
-  .hero-preview > .glass { max-width: 85%; padding: .625rem .75rem; }
   #planos .grid { gap: 1.5rem; }
   #okwa { padding-inline: 1rem; }
 }
@@ -114,7 +107,6 @@ footer { padding-bottom: calc(8rem + env(safe-area-inset-bottom)); }
   main > section:first-child [data-i18n="hero.p"] { margin-top: 1rem; font-size: 1rem; line-height: 1.65; }
   main > section:first-child .hero-in.flex { margin-top: 1.5rem; gap: .75rem; }
   main > section:first-child .hero-in.flex > a { font-size: .9375rem; min-height: 48px; padding: .875rem 1rem; }
-  main > section:first-child dl { margin-top: 2rem; }
   main > section:first-child .hero-in { animation: none; opacity: 1; transform: none; }
   main > section:first-child .float { animation: none; }
   main h2 { font-size: clamp(1.625rem, 6.5vw, 2.25rem); }
