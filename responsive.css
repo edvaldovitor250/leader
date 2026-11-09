@@ -46,8 +46,10 @@ h1, h2, h3 { text-wrap: balance; }
 .field { min-width: 0; max-width: 100%; font-size: 1rem; }
 #fname { max-width: 100%; }
 summary { min-height: 44px; align-items: center; }
-#wa { width: 56px; height: 56px; right: max(1rem, env(safe-area-inset-right)); bottom: max(1rem, env(safe-area-inset-bottom)); }
-footer { padding-bottom: calc(6rem + env(safe-area-inset-bottom)); }
+#wa { width: 95px; height: 95px; }
+.wa-label { position: relative; }
+.wa-label::after { content: ''; position: absolute; right: -6px; top: 50%; transform: translateY(-50%); border: 6px solid transparent; border-left-color: #fff; border-right: 0; }
+footer { padding-bottom: calc(8rem + env(safe-area-inset-bottom)); }
 /* Clip decorative glows only; content must fit without hiding overflow. */
 #exemplos, #planos { overflow: clip; }
 @media (min-width: 1024px) {
