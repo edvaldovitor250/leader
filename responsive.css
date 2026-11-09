@@ -40,7 +40,7 @@ h1, h2, h3 { text-wrap: balance; }
 #hCont { bottom: 5rem; }
 #vid { object-fit: contain; }
 #galeria video { object-fit: contain; max-height: 80svh; }
-#planos article, #vantagens article { padding: clamp(1.25rem, 3vw, 2rem); }
+#planos article { padding: clamp(1.25rem, 3vw, 2rem); }
 [data-i18n="pl.p2badge"] { position: static; align-self: flex-start; margin-bottom: 1rem; text-align: center; }
 #form, #ok { padding: clamp(1rem, 3vw, 2.25rem); }
 .field { min-width: 0; max-width: 100%; font-size: 1rem; }
@@ -72,8 +72,6 @@ footer { padding-bottom: calc(8rem + env(safe-area-inset-bottom)); }
 @media (min-width: 640px) and (max-width: 1023px) {
   #como-funciona ol { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   #como-funciona ol > div { display: none; }
-  #vantagens .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  #vantagens article { grid-column: auto; }
 }
 @media (max-width: 639px) {
   main > section > div:not(.aurora) { padding-inline: max(1rem, env(safe-area-inset-left)) max(1rem, env(safe-area-inset-right)); }
