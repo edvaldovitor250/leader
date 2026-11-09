@@ -49,15 +49,13 @@ summary { min-height: 44px; align-items: center; }
 #wa-widget { position: fixed; z-index: 40; display: flex; align-items: center; gap: .75rem; right: calc(.75rem + env(safe-area-inset-right, 0px)); bottom: calc(.75rem + env(safe-area-inset-bottom, 0px)); max-width: calc(100% - 1.5rem - env(safe-area-inset-left, 0px) - env(safe-area-inset-right, 0px)); pointer-events: none; }
 #wa { width: 56px; height: 56px; flex: 0 0 56px; font-size: 2rem; line-height: 1; pointer-events: auto; animation: none; }
 #wa:hover { transform: none; }
-#wa-widget .wa-label { position: relative; display: none; animation: none; }
+#wa-widget .wa-label { position: relative; display: block; width: 140px; max-width: calc(100vw - 104px - env(safe-area-inset-left, 0px) - env(safe-area-inset-right, 0px)); padding: .625rem .75rem; font-size: .75rem; line-height: 1.35; animation: none; }
 body:has(#burger[aria-expanded="true"]) #wa-widget,
 body:has(#form :focus) #wa-widget { visibility: hidden; pointer-events: none; }
 @media (min-width: 768px) and (min-height: 501px) {
   #wa-widget { right: calc(1.25rem + env(safe-area-inset-right, 0px)); bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px)); }
   #wa { width: 64px; height: 64px; flex-basis: 64px; font-size: 2.5rem; }
-  #wa-widget .wa-label { display: block; max-width: 200px; visibility: hidden; opacity: 0; }
-  #wa-widget:has(#wa:hover) .wa-label,
-  #wa-widget:focus-within .wa-label { visibility: visible; opacity: 1; }
+  #wa-widget .wa-label { width: 180px; max-width: 200px; font-size: .875rem; }
 }
 .wa-label::after { content: ''; position: absolute; right: -6px; top: 50%; transform: translateY(-50%); border: 6px solid transparent; border-left-color: #fff; border-right: 0; }
 footer { padding-bottom: calc(8rem + env(safe-area-inset-bottom)); }
