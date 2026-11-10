@@ -82,16 +82,6 @@ details[open] .chev{transform:rotate(180deg)}
       <a data-i18n="nav.faq" class="hover:text-gold transition" href="#faq">FAQ</a>
     </nav>
     <div class="flex items-center gap-2 sm:gap-3">
-      <label class="sr-only" data-i18n="a_lsel" for="i18nSel">Website language</label>
-      <select id="i18nSel" data-i18n-aria="a_lsel" class="i18n-sel shrink-0" data-i18n-title="a_lsel" title="Website language" aria-label="Website language">
-        <option value="pt">PT</option>
-        <option value="en" selected>EN (UK)</option>
-        <option value="de">DE</option>
-        <option value="fr">FR</option>
-        <option value="es">ES</option>
-        <option value="it">IT</option>
-        <option value="pl">PL</option>
-      </select>
       <a href="#pedido" data-i18n="cta.quote" class="btn-gold hidden sm:inline-flex rounded-full px-5 py-2.5 text-sm shrink-0 whitespace-nowrap">Request a quote</a>
       <button id="burger" data-i18n-aria="a_menu" class="lg:hidden w-11 h-11 rounded-full glass grid place-items-center" aria-label="Open menu" aria-expanded="false" aria-controls="mnav"><i class="fa-solid fa-bars"></i></button>
     </div>
@@ -838,12 +828,9 @@ function setLang(l){
   document.querySelectorAll('[data-i18n-ph]').forEach(function(el){var v=T[l][el.getAttribute('data-i18n-ph')];if(v!=null)el.setAttribute('placeholder',v)});
   document.querySelectorAll('[data-i18n-aria]').forEach(function(el){var v=T[l][el.getAttribute('data-i18n-aria')];if(v!=null)el.setAttribute('aria-label',v)});
   document.querySelectorAll('[data-i18n-title]').forEach(function(el){var v=T[l][el.getAttribute('data-i18n-title')];if(v!=null)el.setAttribute('title',v)});
-  var s=document.getElementById('i18nSel');if(s&&s.value!==l)s.value=l;
   if(window.onLangChange)window.onLangChange();
 }
-var lsel=document.getElementById('i18nSel');
-if(lsel)lsel.addEventListener('change',function(e){setLang(e.target.value)});
-// British English is the default on every visit; visitors can switch manually.
+// British English only.
 setLang('en');
 </script>
 <script>
